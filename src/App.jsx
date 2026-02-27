@@ -9,7 +9,7 @@ import TermosDeUso from './pages/TermosDeUso';
 function App() {
   return (
     <Router>
-      {/* Colocamos o ID numa div que envolve os componentes principais */}
+      {/* O ID 'top' agora envolve a estrutura para garantir a referência de altura */}
       <div id="top" className="app-container">
         <Header />
         <main>

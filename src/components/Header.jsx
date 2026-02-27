@@ -9,18 +9,18 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  // Função para calcular o scroll exato ignorando conflitos de CSS
+  // Função infalível: calcula a posição exata e subtrai a altura do header
   const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80; // Altura do seu Header fixo
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+    const yOffset = -80; // Ajuste este valor se o seu Header for mais alto/baixo
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   return (
     <header className="header">
       <div className="header-container">
         
-        {/* Logo - Agora usando a função de scroll manual */}
+        {/* Logo - Retorna ao ID 'top' definido no App.jsx */}
         <NavHashLink 
           to="/#top" 
           scroll={scrollWithOffset}
