@@ -1,0 +1,10 @@
+[
+  { "id": 1, "nome": "Unimed", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Unimed" },
+  { "id": 2, "nome": "Bradesco Saúde", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Bradesco+Saúde" },
+  { "id": 3, "nome": "Amil", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Amil" },
+  { "id": 4, "nome": "SulAmérica", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=SulAmérica" },
+  { "id": 5, "nome": "Hapvida", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Hapvida" },
+  { "id": 6, "nome": "Intermédica", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Intermédica" },
+  { "id": 7, "nome": "Porto Seguro", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Porto+Seguro" },
+  { "id": 8, "nome": "Allianz", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Allianz" }
+]

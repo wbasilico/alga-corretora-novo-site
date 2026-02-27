@@ -1,0 +1,138 @@
+.sobre-page {
+  padding-top: 80px;
+  background-color: var(--alga-off-white);
+}
+
+/* Hero Sobre - Usando apenas cor/gradiente */
+.sobre-hero {
+  padding: 120px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f7f6 0%, #f6f3ee 100%);
+}
+
+.sobre-hero h1 {
+  font-size: 3.2rem;
+  color: var(--alga-cinza-azulado);
+  line-height: 1.2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sobre-hero span {
+  color: var(--alga-verde-agua);
+}
+
+/* Quem Somos - Centralizado e elegante */
+.quem-somos {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.quem-somos-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: var(--alga-verde-agua);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.quem-somos-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: var(--alga-cinza-azulado);
+  line-height: 1.3;
+}
+
+.text-wrapper p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  color: #444;
+  text-align: justify; /* Opcional: traz um ar mais institucional */
+}
+
+/* Missão e Visão */
+.missao-visao {
+  padding: 100px 0;
+  background-color: #fcfcfc;
+}
+
+.mv-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.card-mv {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+.icon-box {
+  width: 64px;
+  height: 64px;
+  background: var(--alga-verde-agua);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  margin: 0 auto 30px;
+}
+
+/* Valores */
+.valores {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.valores-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+  color: var(--alga-cinza-azulado);
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.valor-card {
+  padding: 50px 25px;
+  border-radius: 24px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  transition: all 0.4s ease;
+}
+
+.valor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  border-color: var(--alga-verde-agua);
+}
+
+.v-icon {
+  color: var(--alga-coral-vibrante);
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .mv-cards, .valores-grid {
+    grid-template-columns: 1fr;
+  }
+  .sobre-hero h1 { font-size: 2.2rem; }
+  .quem-somos-content h2 { font-size: 1.8rem; }
+}

@@ -1,0 +1,134 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Altura fixa exigida para o hover funcionar bem */
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--alga-verde-agua);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+.nav-list li {
+  height: 100%;
+}
+
+.nav-list a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: var(--alga-cinza-azulado);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Efeito de Hover exato como solicitado */
+.nav-list a:hover {
+  background-color: var(--alga-verde-agua);
+  color: var(--alga-off-white);
+  font-weight: 700;
+}
+
+.cta-button {
+  background-color: var(--alga-coral-vibrante);
+  color: var(--alga-off-white);
+  padding: 10px 24px;
+}
+
+.cta-button:hover {
+  background-color: #e55a39;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  color: var(--alga-cinza-azulado);
+}
+
+/* Responsivo (Mobile) */
+@media (max-width: 991px) {
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--alga-off-white);
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    visibility: hidden;
+    pointer-events: none;
+    clip-path: circle(0px at top right);
+    transition: all 0.4s ease-in-out;
+    height: calc(100vh - 80px);
+  }
+
+  .nav-menu.active {
+    clip-path: circle(150% at top right);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list a {
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    margin-top: 20px;
+    width: 80%;
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,202 @@
+.planos-section {
+  background-color: var(--alga-verde-agua);
+  padding: 100px 20px 60px;
+  color: var(--alga-off-white);
+  position: relative;
+}
+
+.planos-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.planos-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.planos-header p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Wrapper para segurar as máscaras de opacidade e o carrossel */
+.carrossel-wrapper {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px; /* Espaço para os botões de navegação */
+}
+
+/* Máscaras de Opacidade */
+.mask-left, .mask-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  z-index: 10;
+  pointer-events: none; /* Permite que o mouse/dedo passe através da máscara para deslizar */
+}
+
+.mask-left {
+  left: 0;
+  background: linear-gradient(to right, var(--alga-verde-agua) 0%, transparent 100%);
+}
+
+.mask-right {
+  right: 0;
+  background: linear-gradient(to left, var(--alga-verde-agua) 0%, transparent 100%);
+}
+
+/* Estilização do Swiper e Botões de Navegação (Z-index acima da máscara) */
+.planos-swiper {
+  padding: 20px 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: var(--alga-off-white) !important;
+  z-index: 20 !important; /* Acima da máscara */
+}
+
+/* Força todos os slides a terem a mesma altura do slide mais alto */
+.planos-swiper .swiper-slide {
+  height: auto;
+}
+
+/* Impedir seleção de texto ao arrastar */
+.plano-card {
+  user-select: none;
+  -webkit-user-select: none;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 25px;
+  /* Redefinindo o Glassmorphism especificamente para este fundo verde */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.plano-info {
+  text-align: left;
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plano-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.operadora {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.plano-logo {
+  width: 100%;
+  height: 100px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plano-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Formatação Específica de Preço */
+.plano-preco-area {
+  text-align: left;
+}
+
+.a-partir {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+
+.preco-destaque {
+  display: flex;
+  align-items: flex-start; /* Alinha o '290' no topo */
+  line-height: 1;
+}
+
+.moeda {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-right: 4px;
+  align-self: flex-end;
+  margin-bottom: 3px;
+}
+
+.inteiro {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: var(--font-title);
+}
+
+.centavos {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 6px;
+  font-family: var(--font-title);
+}
+
+.asterisco {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.btn-contratar {
+  width: 100%;
+  background-color: var(--alga-off-white);
+  color: var(--alga-verde-agua);
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-top: auto; /* Empurra o botão para o fundo do card */
+}
+
+.btn-contratar:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.planos-footer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 40px 0;
+  position: relative;
+  z-index: 20; /* Garante que fique acima da máscara se houver sobreposição */
+}
+
+.nota-legal {
+  font-size: 0.75rem;
+  text-align: left;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .mask-left, .mask-right {
+    width: 60px; /* Reduz a máscara em telas menores */
+  }
+  .carrossel-wrapper {
+    padding: 0 20px;
+  }
+}

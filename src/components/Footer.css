@@ -1,0 +1,157 @@
+/* ==========================================
+   ESTILO DO RODAPÉ (FOOTER) - HÍBRIDO
+   ========================================== */
+
+.footer {
+  background-color: var(--alga-cinza-azulado);
+  color: var(--alga-off-white);
+  padding: 80px 0 0 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 Colunas no Desktop */
+  gap: 40px;
+}
+
+.footer-coluna {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Alinhamentos Desktop --- */
+.logo-coluna {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.links-coluna {
+  align-items: center;
+  text-align: center;
+}
+
+.redes-coluna {
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* --- Elementos Visuais --- */
+.footer-logo {
+  height: 85px;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.mensagem-footer {
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+.info-empresa p {
+  opacity: 0.6;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer-coluna h3 {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: var(--alga-verde-agua);
+}
+
+/* --- Links Institucionais --- */
+.links-coluna ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-coluna li {
+  margin-bottom: 15px;
+}
+
+.links-coluna a {
+  color: var(--alga-off-white);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.links-coluna a:hover {
+  opacity: 1;
+  color: var(--alga-verde-agua);
+}
+
+/* --- Redes Sociais (Botão com Hover corrigido) --- */
+.redes-icones {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--alga-off-white); /* Cor original do ícone */
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--alga-verde-agua);
+  color: var(--alga-off-white); /* Mantém o ícone branquinho no hover */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Copyright --- */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  opacity: 0.5;
+  font-size: 0.85rem;
+}
+
+/* ==========================================
+   VERSÃO MOBILE (A MÁGICA ACONTECE AQUI)
+   ========================================== */
+
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;             /* Muda de Grid para Flex */
+    flex-direction: column;    /* Empilha os itens */
+    align-items: center;       /* Centraliza tudo horizontalmente */
+    text-align: center;        /* Centraliza o texto */
+    gap: 50px;                 /* Dá espaço entre os blocos empilhados */
+  }
+
+  .footer-coluna {
+    align-items: center;       /* Força cada coluna a centralizar seus filhos */
+    width: 100%;
+  }
+
+  .logo-coluna, .links-coluna, .redes-coluna {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mensagem-footer {
+    max-width: 100%;           /* Texto ocupa a largura toda no celular */
+  }
+
+  .redes-icones {
+    justify-content: center;   /* Centraliza os ícones das redes no mobile */
+  }
+}

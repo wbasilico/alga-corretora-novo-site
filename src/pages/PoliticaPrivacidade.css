@@ -1,0 +1,90 @@
+.politica-page {
+  padding-top: 80px;
+  background-color: var(--alga-off-white);
+  color: var(--alga-cinza-azulado);
+}
+
+.politica-hero {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f0f7f6;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.politica-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.politica-hero p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.politica-content {
+  padding: 80px 0;
+}
+
+.texto-juridico {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.texto-juridico .intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.texto-juridico h2 {
+  font-size: 1.6rem;
+  margin: 40px 0 20px;
+  color: var(--alga-verde-agua);
+}
+
+.texto-juridico p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.texto-juridico ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.texto-juridico li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #555;
+  list-style-type: disc;
+}
+
+.contato-privacidade {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: var(--alga-areia);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contato-privacidade p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .texto-juridico {
+    padding: 30px 20px;
+  }
+  .politica-hero h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "cidade": "São Paulo - SP",
+    "whatsapp": "5511911111111",
+    "endereco": "Edifício Paulista Prime, Av. Paulista",
+    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+  },
+  {
+    "id": 2,
+    "cidade": "Rio de Janeiro - RJ",
+    "whatsapp": "5521981055422",
+    "endereco": "Centro Empresarial Sul, Botafogo",
+    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+  },
+  {
+    "id": 3,
+    "cidade": "Belo Horizonte - MG",
+    "whatsapp": "5511911111111",
+    "endereco": "Torre Savassi, Bairro Savassi",
+    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+  },
+  {
+    "id": 4,
+    "cidade": "Curitiba - PR",
+    "whatsapp": "5511911111111",
+    "endereco": "Batel Corporate, Bairro Batel",
+    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+  },
+  {
+    "id": 5,
+    "cidade": "Salvador - BA",
+    "whatsapp": "5511911111111",
+    "endereco": "Caminho das Árvores Trade Center",
+    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+  }
+]

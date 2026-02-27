@@ -1,0 +1,87 @@
+.diferenciais-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  color: var(--alga-cinza-azulado);
+}
+
+.diferenciais-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.diferenciais-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.diferenciais-header h2 {
+  font-size: 2.5rem;
+}
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.diferencial-card {
+  background-color: var(--alga-cinza-azulado);
+  color: var(--alga-off-white);
+  padding: 50px 30px;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Sombra de contato inicial */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animação suave e elástica */
+}
+
+/* Efeito Hover solicitado */
+.diferencial-card:hover {
+  transform: translateY(-12px) scale(1.03); /* Aumenta levemente e sobe */
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1); /* Sombra mais difusa (visto de cima) */
+}
+
+.icone-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  color: var(--alga-verde-agua);
+}
+
+.diferencial-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--alga-off-white);
+}
+
+.diferencial-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 991px) {
+  .diferenciais-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .diferenciais-header h2 {
+    font-size: 2rem;
+  }
+}

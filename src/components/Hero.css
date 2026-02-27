@@ -1,0 +1,142 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px; /* Compensa o header fixo */
+  /* Degradê suave do layout */
+  background: linear-gradient(135deg, #eaf5f3 0%, #f6f3ee 100%);
+  display: flex;
+  align-items: center; /* Centraliza o container inteiro verticalmente na tela */
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: stretch; /* MUDANÇA CHAVE 1: Força as duas colunas (texto e slider) a terem a mesma altura */
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px; /* Espaço fixo entre as colunas */
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o texto verticalmente dentro da sua própria coluna esticada */
+  padding: 20px 0; /* Pequeno respiro interno */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: var(--alga-cinza-azulado);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-simular {
+  background-color: var(--alga-coral-vibrante);
+  color: var(--alga-off-white);
+  padding: 12px 24px;
+}
+
+.btn-simular:hover {
+  background-color: #e55a39;
+}
+
+.btn-falar {
+  background-color: transparent;
+  color: var(--alga-verde-agua);
+  border: 2px solid var(--alga-verde-agua);
+  padding: 10px 24px;
+}
+
+.btn-falar:hover {
+  background-color: var(--alga-verde-agua);
+  color: var(--alga-off-white);
+}
+
+.hero-slider {
+  flex: 1;
+  max-width: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  /* MUDANÇA CHAVE 2: Como o pai (.hero-container) está com align-items: stretch, 
+     o .hero-slider agora tem a altura exata do .hero-content. 
+     Precisamos garantir que o Swiper dentro dele também ocupe essa altura. */
+  display: flex; 
+}
+
+/* Força o Swiper e os Slides a ocuparem toda a altura herdada do pai (.hero-slider) */
+.hero-slider .mySwiper,
+.hero-slider .swiper-slide {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%; /* Força a imagem a preencher a altura do slide esticado */
+  display: block;
+  /* MUDANÇA CHAVE 3: Essencial. Faz a imagem cobrir a área mantendo a proporção, 
+     cortando as laterais ou topo se necessário, sem achatar a foto. */
+  object-fit: cover; 
+}
+
+/* Customização dos pontinhos */
+.swiper-pagination-bullet {
+  background-color: var(--alga-cinza-azulado) !important;
+  opacity: 0.3 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--alga-coral-vibrante) !important;
+  opacity: 1 !important;
+}
+
+/* Responsivo (Mantendo as correções anteriores) */
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    padding-top: 40px;
+    align-items: center; /* Volta a centralizar no mobile */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero-slider {
+    width: 100%;
+    /* No mobile, define uma proporção padrão para o slider (ex: 4:3) 
+       para não ficar gigante ou invisível se a imagem não carregar. */
+    aspect-ratio: 4/3; 
+  }
+}

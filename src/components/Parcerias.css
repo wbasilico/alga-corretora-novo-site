@@ -1,0 +1,123 @@
+.parcerias-section {
+  background-color: var(--alga-areia);
+  padding: 80px 0;
+  color: var(--alga-cinza-azulado);
+  overflow: hidden;
+}
+
+.parcerias-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.parcerias-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.parcerias-header p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.parcerias-carrossel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden; /* Esconde os logos que saem da tela */
+}
+
+.mask-left-areia, .mask-right-areia {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.mask-left-areia {
+  left: 0;
+  background: linear-gradient(to right, var(--alga-areia) 0%, transparent 100%);
+}
+
+.mask-right-areia {
+  right: 0;
+  background: linear-gradient(to left, var(--alga-areia) 0%, transparent 100%);
+}
+
+/* --- O Truque do Ticker Automático CSS --- */
+.ticker-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-track {
+  display: flex;
+  gap: 40px;
+  padding: 20px 0;
+  width: max-content;
+  /* 30s controla a velocidade. Linear mantém constante. Infinite faz o loop. */
+  animation: scroll 30s linear infinite;
+}
+
+/* Isso garante a parada IMEDIATA quando o mouse entra em qualquer lugar da trilha */
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+/* A animação empurra o contêiner exatamente até a metade (onde a lista duplicada começa) */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 20px)); } /* O -20px compensa metade do gap de 40px */
+}
+
+/* Tamanho fixo para os cards manterem a estabilidade da animação */
+.parceiro-slide {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.parceiro-logo-card {
+  background-color: var(--alga-off-white);
+  padding: 20px 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  
+  filter: grayscale(100%) opacity(0.6);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.parceiro-logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.parceiro-logo-card:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .mask-left-areia, .mask-right-areia {
+    width: 60px;
+  }
+  .parceiro-slide {
+    width: 150px;
+  }
+}

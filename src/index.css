@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap');
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+section {
+  scroll-margin-top: 80px; 
+}
+
+:root {
+  /* Paleta de Cores Alga */
+  --alga-verde-agua: #03A689;
+  --alga-cinza-azulado: #3C4A53;
+  --alga-areia: #C8B8A1;
+  --alga-off-white: #F2F2F2;
+  --alga-coral-vibrante: #FF6B4A;
+
+  /* Configurações Globais */
+  --font-title: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --border-radius-btn: 8px; /* Cantos arredondados, mas mais quadrados */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--alga-off-white);
+  color: var(--alga-cinza-azulado);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+  border-radius: var(--border-radius-btn);
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Utilitário para o Glassmorphism que usaremos mais tarde */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Breakpoint para Ultrawide */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}

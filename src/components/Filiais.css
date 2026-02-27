@@ -1,0 +1,165 @@
+.filiais-section {
+  background-color: var(--alga-off-white);
+  padding: 100px 0;
+  color: var(--alga-cinza-azulado);
+}
+
+.filiais-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.filiais-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.filiais-header p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.filiais-carrossel-wrapper {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px; /* Espaço para as setas do carrossel */
+}
+
+/* Máscaras de opacidade específicas para o fundo Off-White */
+.mask-left-offwhite, .mask-right-offwhite {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.mask-left-offwhite {
+  left: 0;
+  background: linear-gradient(to right, var(--alga-off-white) 0%, transparent 100%);
+}
+
+.mask-right-offwhite {
+  right: 0;
+  background: linear-gradient(to left, var(--alga-off-white) 0%, transparent 100%);
+}
+
+/* Configuração do Swiper para as setas passarem por cima da máscara */
+.filiais-swiper {
+  padding: 20px 0;
+}
+
+.filiais-swiper .swiper-button-next, 
+.filiais-swiper .swiper-button-prev {
+  color: var(--alga-cinza-azulado) !important;
+  z-index: 20 !important;
+}
+
+/* Força todos os slides a terem a mesma altura */
+.filiais-swiper .swiper-slide {
+  height: auto;
+}
+
+/* O Card da Filial */
+.filial-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra de contato */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.filial-img-container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Altura fixa para a imagem */
+}
+
+.filial-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* A sobreposição suave (overlay) em degradê verde-água e coral */
+.filial-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(3, 166, 137, 0.45) 0%, rgba(255, 107, 74, 0.45) 100%);
+  pointer-events: none; /* Para o mouse não interagir com a cor, apenas com o card */
+  mix-blend-mode: multiply; /* Faz a cor se fundir melhor com a foto abaixo */
+}
+
+.filial-info {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.filial-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--alga-cinza-azulado);
+}
+
+.filial-endereco {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.8;
+  margin-bottom: 20px; /* Espaço para o botão */
+}
+
+.icone-mapa {
+  color: var(--alga-coral-vibrante);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Estilo para a div que contém o botão */
+.filial-acao {
+  margin-top: auto; /* Empurra o botão para a parte inferior do card */
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centraliza o botão horizontalmente */
+}
+
+/* O Botão "Contatar" */
+.btn-contatar {
+  background-color: var(--alga-coral-vibrante);
+  color: var(--alga-off-white);
+  padding: 12px 24px;
+  border-radius: var(--border-radius-btn);
+  font-weight: 600;
+  width: 100%; /* Faz o botão ocupar toda a largura do card */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contatar:hover {
+  background-color: #e55a39; /* Tom de coral ligeiramente mais escuro */
+}
+
+@media (max-width: 768px) {
+  .mask-left-offwhite, .mask-right-offwhite {
+    width: 60px;
+  }
+  .filiais-carrossel-wrapper {
+    padding: 0 20px;
+  }
+}
