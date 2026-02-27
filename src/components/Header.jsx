@@ -27,13 +27,13 @@ const Header = () => {
               <NavHashLink smooth to="/#top" onClick={toggleMenu}>Home</NavHashLink>
             </li>
             <li>
-              <NavHashLink smooth to="/#planos" onClick={toggleMenu}>Planos</NavHashLink>
+              <NavHashLink to="/#planos" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={toggleMenu}>Planos</NavHashLink>
             </li>
             <li>
-              <NavHashLink smooth to="/#parcerias" onClick={toggleMenu}>Parcerias</NavHashLink>
+              <NavHashLink to="/#parcerias" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={toggleMenu}>Parcerias</NavHashLink> 
             </li>
             <li>
-              <NavHashLink smooth to="/#filiais" onClick={toggleMenu}>Filiais</NavHashLink>
+              <NavHashLink to="/#filiais" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={toggleMenu}>Filiais</NavHashLink>
             </li>
             <li>
               <NavHashLink to="/sobre" onClick={toggleMenu}>Sobre</NavHashLink>
