@@ -9,11 +9,24 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  // Função para calcular o scroll exato ignorando conflitos de CSS
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80; // Altura do seu Header fixo
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+  };
+
   return (
     <header className="header">
       <div className="header-container">
-        {/* NavHashLink para o topo da página */}
-        <NavHashLink smooth to="/#top" className="logo-link" onClick={() => setIsMenuOpen(false)}>
+        
+        {/* Logo - Agora usando a função de scroll manual */}
+        <NavHashLink 
+          to="/#top" 
+          scroll={scrollWithOffset}
+          className="logo-link" 
+          onClick={() => setIsMenuOpen(false)}
+        >
           <img src={logoImg} alt="Alga Corretora" className="logo" />
         </NavHashLink>
 
@@ -24,28 +37,37 @@ const Header = () => {
         <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-list">
             <li>
-              <NavHashLink smooth to="/#top" onClick={toggleMenu}>Home</NavHashLink>
+              <NavHashLink to="/#top" scroll={scrollWithOffset} onClick={toggleMenu}>
+                Home
+              </NavHashLink>
             </li>
             <li>
-              <NavHashLink to="/#planos" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={toggleMenu}>Planos</NavHashLink>
+              <NavHashLink to="/#planos" scroll={scrollWithOffset} onClick={toggleMenu}>
+                Planos
+              </NavHashLink>
             </li>
             <li>
-              <NavHashLink to="/#parcerias" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={toggleMenu}>Parcerias</NavHashLink> 
+              <NavHashLink to="/#parcerias" scroll={scrollWithOffset} onClick={toggleMenu}>
+                Parcerias
+              </NavHashLink>
             </li>
             <li>
-              <NavHashLink to="/#filiais" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={toggleMenu}>Filiais</NavHashLink>
+              <NavHashLink to="/#filiais" scroll={scrollWithOffset} onClick={toggleMenu}>
+                Filiais
+              </NavHashLink>
             </li>
             <li>
-              <NavHashLink to="/sobre" onClick={toggleMenu}>Sobre</NavHashLink>
+              <NavHashLink to="/sobre" onClick={toggleMenu}>
+                Sobre
+              </NavHashLink>
             </li>
           </ul>
           
-          {/* Botão corrigido com onClick */}
           <button 
             className="cta-button" 
             onClick={() => window.open(getWhatsAppUrl(WA_CONFIG.numeroVendas, WA_CONFIG.msgInteresse), '_blank')}
           >
-            Falar com especialista
+            Falar com Consultor
           </button>
         </nav>
       </div>
