@@ -8,6 +8,8 @@ import { getWhatsAppUrl, WA_CONFIG } from '../utils/contatosRedes';
 const slides = [
   { id: 1, img: 'https://dummyimage.com/1000x800/03A689/ffffff&text=Hero+Landscape+1' },
   { id: 2, img: 'https://dummyimage.com/1000x800/3C4A53/ffffff&text=Hero+Landscape+2' },
+  { id: 3, img: 'https://dummyimage.com/1000x800/3C4A53/ffffff&text=Hero+Landscape+2' },
+
 ];
 
 const Hero = () => {
