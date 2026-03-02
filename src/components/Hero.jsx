@@ -7,7 +7,7 @@ import { getWhatsAppUrl, WA_CONFIG } from '../utils/contatosRedes';
 
 const slides = [
   { id: 1, img: '/images/hero/hero1.png' },
-  { id: 2, img: 'https://dummyimage.com/1000x800/3C4A53/ffffff&text=Hero+Landscape+2' },
+  { id: 2, img: '/images/hero/hero2.png' },
 ];
 
 const Hero = () => {
