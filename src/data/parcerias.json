@@ -1,10 +1,10 @@
 [
-  { "id": 1, "nome": "Unimed", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Unimed" },
-  { "id": 2, "nome": "Bradesco Saúde", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Bradesco+Saúde" },
-  { "id": 3, "nome": "Amil", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Amil" },
-  { "id": 4, "nome": "SulAmérica", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=SulAmérica" },
-  { "id": 5, "nome": "Hapvida", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Hapvida" },
-  { "id": 6, "nome": "Intermédica", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Intermédica" },
-  { "id": 7, "nome": "Porto Seguro", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Porto+Seguro" },
-  { "id": 8, "nome": "Allianz", "logo": "https://dummyimage.com/200x80/ffffff/03A689&text=Allianz" }
+  { "id": 1, "nome": "SulAmérica", "logo": "/images/logos/sulamerica.png" },
+  { "id": 2, "nome": "Bradesco Saúde", "logo": "/images/logos/bradesco.png" },
+  { "id": 3, "nome": "Hapvida", "logo": "/images/logos/hapvida.png" },
+  { "id": 4, "nome": "Unimed", "logo": "/images/logos/unimed.png" },
+  { "id": 5, "nome": "Affix", "logo": "/images/logos/affix.png" },
+  { "id": 6, "nome": "AllCare", "logo": "/images/logos/allcare.png" },
+  { "id": 7, "nome": "BoomCard", "logo": "/images/logos/boomcard.png" },
+  { "id": 8, "nome": "Quali Corp", "logo": "/images/logos/quali-corp.png" }
 ]
