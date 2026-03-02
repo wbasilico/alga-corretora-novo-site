@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "nome": "Plano Essencial",
-    "operadora": "Amil Saúde",
-    "imagemLogo": "https://via.placeholder.com/300x120/ffffff/03A689?text=Logo+Amil",
-    "precoInteiro": "290",
-    "precoCentavos": ",95"
+    "nome": "Smart 200 Rio",
+    "operadora": "Hapvida",
+    "imagemLogo": "/images/logos/hapvida.png",
+    "precoInteiro": "287",
+    "precoCentavos": ",14"
   },
   {
     "id": 2,
