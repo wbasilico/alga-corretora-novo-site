@@ -9,42 +9,42 @@
   },
   {
     "id": 2,
-    "nome": "Plano Ouro Prime",
-    "operadora": "Bradesco Saúde",
-    "imagemLogo": "https://via.placeholder.com/300x120/ffffff/03A689?text=Logo+Bradesco",
-    "precoInteiro": "345",
-    "precoCentavos": ",50"
+    "nome": "Belo Horizonte/MG",
+    "operadora": "Hapvida",
+    "imagemLogo": "/images/logos/hapvida.png",
+    "precoInteiro": "176",
+    "precoCentavos": ",34"
   },
   {
     "id": 3,
-    "nome": "Plano Smart 200",
-    "operadora": "Intermédica",
-    "imagemLogo": "https://via.placeholder.com/300x120/ffffff/03A689?text=Logo+GNDI",
-    "precoInteiro": "198",
-    "precoCentavos": ",90"
+    "nome": "São Luís/MA",
+    "operadora": "Hapvida",
+    "imagemLogo": "/images/logos/hapvida.png",
+    "precoInteiro": "204",
+    "precoCentavos": ",20"
   },
   {
     "id": 4,
-    "nome": "Plano Especial",
+    "nome": "Direto Nacional",
     "operadora": "SulAmérica",
-    "imagemLogo": "https://via.placeholder.com/300x120/ffffff/03A689?text=Logo+SulAmerica",
-    "precoInteiro": "410",
-    "precoCentavos": ",00"
+    "imagemLogo": "/images/logos/sulamerica.png",
+    "precoInteiro": "635",
+    "precoCentavos": ",79"
   },
   {
     "id": 5,
-    "nome": "Plano Exato",
-    "operadora": "Unimed",
-    "imagemLogo": "https://via.placeholder.com/300x120/ffffff/03A689?text=Logo+Unimed",
-    "precoInteiro": "275",
-    "precoCentavos": ",30"
+    "nome": "Nacional",
+    "operadora": "Bradesco",
+    "imagemLogo": "/images/logos/bradesco.png",
+    "precoInteiro": "790",
+    "precoCentavos": ",00"
   },
   {
     "id": 6,
-    "nome": "Plano Ideal",
-    "operadora": "Hapvida",
-    "imagemLogo": "https://via.placeholder.com/300x120/ffffff/03A689?text=Logo+Hapvida",
-    "precoInteiro": "150",
-    "precoCentavos": ",00"
+    "nome": "Nacional RN",
+    "operadora": "Unimed",
+    "imagemLogo": "/images/logos/unimed.png",
+    "precoInteiro": "451",
+    "precoCentavos": ",87"
   }
 ]
