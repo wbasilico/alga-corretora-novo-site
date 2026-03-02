@@ -2,7 +2,7 @@ import { NavHashLink } from 'react-router-hash-link';
 import { Instagram, Facebook } from 'lucide-react';
 import { SOCIAL_CONFIG } from '../utils/contatosRedes'; // Nome atualizado aqui
 import './Footer.css';
-import logoImg from '../assets/images/alga_verde-logo.png';
+import logoImg from '/images/alga_verde-logo.png';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {

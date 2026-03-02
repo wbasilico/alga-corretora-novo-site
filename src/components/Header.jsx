@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NavHashLink } from 'react-router-hash-link'; 
 import { Menu, X } from 'lucide-react';
 import './Header.css';
-import logoImg from '../assets/images/alga_verde-logo.png';
+import logoImg from '/images/alga_verde-logo.png';
 import { getWhatsAppUrl, WA_CONFIG } from '../utils/contatosRedes';
 
 const Header = () => {

@@ -6,7 +6,7 @@ import './Hero.css';
 import { getWhatsAppUrl, WA_CONFIG } from '../utils/contatosRedes';
 
 const slides = [
-  { id: 1, img: 'https://www.canva.com/design/DAHCzzuinKk/--x6fcfy07cGCF33dZiQ-A/edit?utm_content=DAHCzzuinKk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' },
+  { id: 1, img: '/images/hero/hero1.png' },
   { id: 2, img: 'https://dummyimage.com/1000x800/3C4A53/ffffff&text=Hero+Landscape+2' },
 ];
 
