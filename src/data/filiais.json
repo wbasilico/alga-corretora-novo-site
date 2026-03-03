@@ -1,37 +1,79 @@
 [
   {
     "id": 1,
-    "cidade": "São Paulo - SP",
-    "whatsapp": "5511911111111",
-    "endereco": "Edifício Paulista Prime, Av. Paulista",
-    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+    "cidade": "Rio de Janeiro - RJ",
+    "whatsapp": "5521982197251",
+    "endereco": "Av. Nilo Peçanha, 50 - Centro",
+    "imagem": "/images/filiais/local01.webp"
   },
   {
     "id": 2,
-    "cidade": "Rio de Janeiro - RJ",
-    "whatsapp": "5521981055422",
-    "endereco": "Centro Empresarial Sul, Botafogo",
-    "imagem": "/images/filiais/rj.jpg"
+    "cidade": "Nova Iguaçu - RJ",
+    "whatsapp": "5521971412207",
+    "endereco": "Rua Dr. Ataide Pimenta de Moraes, 211 - Centro",
+    "imagem": "/images/filiais/local02.webp"
   },
   {
     "id": 3,
-    "cidade": "Belo Horizonte - MG",
-    "whatsapp": "5511911111111",
-    "endereco": "Torre Savassi, Bairro Savassi",
-    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+    "cidade": "Niterói - RJ",
+    "whatsapp": "5521988742128",
+    "endereco": "Rua Doutor Borman, 13 - Lj. 107 - Centro",
+    "imagem": "/images/filiais/local03.webp"
   },
   {
     "id": 4,
-    "cidade": "Curitiba - PR",
-    "whatsapp": "5511911111111",
-    "endereco": "Batel Corporate, Bairro Batel",
-    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+    "cidade": "Maricá - RJ",
+    "whatsapp": "5521982197251",
+    "endereco": "Av. Nossa Senhora do Amparo, 59 - Lj. 02 - Centro",
+    "imagem": "/images/filiais/local04.webp"
   },
   {
     "id": 5,
+    "cidade": "Queimados - RJ",
+    "whatsapp": "5521982197251",
+    "endereco": "Av. Prof Avelino Xanxão, 205 - Centro",
+    "imagem": "/images/filiais/local05.webp"
+  },
+  {
+    "id": 6,
+    "cidade": "Saquarema - RJ",
+    "whatsapp": "5521976512246",
+    "endereco": "Rua Adolfo Bravo, 25 - Bacaxá",
+    "imagem": "/images/filiais/local06.webp"
+  },
+  {
+    "id": 7,
+    "cidade": "Belo Horizonte - MG",
+    "whatsapp": "553194282624",
+    "endereco": "Rua Juiz de Fora, 115 - Sl. 1201 - Barro Preto",
+    "imagem": "/images/filiais/local07.webp"
+  },
+  {
+    "id": 8,
+    "cidade": "Natal - RN",
+    "whatsapp": "558492336397",
+    "endereco": "Rua Princesa Isabel, 523 - Gal. Princesa Isabel, Lj. 01 - Cidade Alta",
+    "imagem": "/images/filiais/local08.webp"
+  },
+  {
+    "id": 9,
     "cidade": "Salvador - BA",
-    "whatsapp": "5511911111111",
-    "endereco": "Caminho das Árvores Trade Center",
-    "imagem": "https://dummyimage.com/600x400/cccccc/ffffff&text=Sua+Imagem"
+    "whatsapp": "557191228219",
+    "endereco": "Rua do Uruguay, 753 - Lj. 24 - Uruguai",
+    "imagem": "/images/filiais/local09.webp"
+  },
+  {
+    "id": 10,
+    "cidade": "São Luís - MA",
+    "whatsapp": "559885594525",
+    "endereco": "Rua Oswaldo Cruz n° 767 - Shopping Rua Grande, Lj. T04E (Térreo) - Centro",
+    "imagem": "/images/filiais/local10.webp"
+  },
+  {
+    "id": 11,
+    "cidade": "Manaus - AM",
+    "whatsapp": "559284113141",
+    "endereco": "Rua Major Gabriel, 1639 - Pç. XIV - Centro",
+    "imagem": "/images/filiais/local11.webp"
   }
 ]
