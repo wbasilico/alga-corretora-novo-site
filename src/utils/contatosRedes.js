@@ -10,7 +10,7 @@ export const getWhatsAppUrl = (numero, mensagem) => {
 export const WA_CONFIG = {
   numeroVendas: "5521982197251",
   numeroSimulacao: "5521982197251",
-  msgInteresse: "Olá, tenho interesse em adquirir um plano de saúde e desejo mais informações.",
+  msgInteresse: "Olá, tenho interesse em adquirir um plano de saúde e desejo ter mais informações.",
   msgSimulacao: "Olá, quero simular os valores do plano que tenho interesse."
 };
 
