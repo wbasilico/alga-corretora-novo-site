@@ -6,9 +6,34 @@
   background: linear-gradient(135deg, var(--alga-off-white) 0%, var(--alga-verde-agua) 100%);
   display: flex;
   align-items: center; /* Centraliza o container inteiro verticalmente na tela */
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* 1. COLOQUE O CAMINHO DA SUA IMAGEM AQUI */
+  background-image: url('/images/pattern.png'); 
+  background-size: cover; /* Se for um padrão pequeno que se repete, troque para 'auto' e adicione 'background-repeat: repeat;' */
+  background-position: center;
+  
+  /* 2. A MÁGICA DO EFEITO */
+  opacity: 0.45; /* Baixa opacidade: 0.15 significa 15%. Ajuste a gosto! */
+  mix-blend-mode: overlay; /* Tente 'multiply' para escurecer ou 'overlay' para dar contraste */
+  
+  /* 3. PROTEÇÕES */
+  pointer-events: none; /* Garante que a textura não bloqueie o clique nos botões */
+  z-index: 0; /* Fica no fundo, logo acima do degradê */
 }
 
 .hero-container {
+  position: relative;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
