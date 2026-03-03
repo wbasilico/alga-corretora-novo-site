@@ -3,7 +3,7 @@
   height: 100vh;
   padding-top: 80px; /* Compensa o header fixo */
   /* Degradê suave do layout */
-  background: linear-gradient(135deg, #eaf5f3 0%, #f6f3ee 100%);
+  background: linear-gradient(135deg, var(--alga-off-white) 0%, var(--alga-verde-agua) 100%);
   display: flex;
   align-items: center; /* Centraliza o container inteiro verticalmente na tela */
 }
@@ -58,13 +58,13 @@
 
 .btn-falar {
   background-color: transparent;
-  color: var(--alga-verde-agua);
-  border: 2px solid var(--alga-verde-agua);
+  color: var(--alga-cinza-azulado);
+  border: 2px solid var(--alga-cinza-azulado);
   padding: 10px 24px;
 }
 
 .btn-falar:hover {
-  background-color: var(--alga-verde-agua);
+  background-color: var(--alga-cinza-azulado);
   color: var(--alga-off-white);
 }
 

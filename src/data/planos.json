@@ -5,7 +5,8 @@
     "operadora": "Hapvida",
     "imagemLogo": "/images/logos/hapvida.png",
     "precoInteiro": "287",
-    "precoCentavos": ",14"
+    "precoCentavos": ",14",
+    "whatsapp": "5521979144283"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "operadora": "Hapvida",
     "imagemLogo": "/images/logos/hapvida.png",
     "precoInteiro": "176",
-    "precoCentavos": ",34"
+    "precoCentavos": ",34",
+    "whatsapp": "553193548364"
   },
   {
     "id": 3,
@@ -21,30 +23,115 @@
     "operadora": "Hapvida",
     "imagemLogo": "/images/logos/hapvida.png",
     "precoInteiro": "204",
-    "precoCentavos": ",20"
+    "precoCentavos": ",20",
+    "whatsapp": "5521967367932"
   },
   {
     "id": 4,
+    "nome": "Manaus/AM",
+    "operadora": "Hapvida",
+    "imagemLogo": "/images/logos/hapvida.png",
+    "precoInteiro": "204",
+    "precoCentavos": ",20",
+    "whatsapp": "5521988491867"
+  },
+  {
+    "id": 5,
+    "nome": "Natal/RN",
+    "operadora": "Hapvida",
+    "imagemLogo": "/images/logos/hapvida.png",
+    "precoInteiro": "204",
+    "precoCentavos": ",20",
+    "whatsapp": "5521997734036"
+  },
+  {
+    "id": 6,
+    "nome": "Salvador/BA",
+    "operadora": "Hapvida",
+    "imagemLogo": "/images/logos/hapvida.png",
+    "precoInteiro": "204",
+    "precoCentavos": ",20",
+    "whatsapp": "557191228219"
+  },
+  {
+    "id": 7,
     "nome": "Direto Nacional",
     "operadora": "SulAmérica",
     "imagemLogo": "/images/logos/sulamerica.png",
     "precoInteiro": "635",
-    "precoCentavos": ",79"
+    "precoCentavos": ",79",
+    "whatsapp": "5521974337257"
   },
   {
-    "id": 5,
-    "nome": "Nacional",
+    "id": 8,
+    "nome": "Top Nacional",
     "operadora": "Bradesco",
     "imagemLogo": "/images/logos/bradesco.png",
-    "precoInteiro": "790",
-    "precoCentavos": ",00"
+    "precoInteiro": "522",
+    "precoCentavos": ",88",
+    "whatsapp": "5521984537581"
   },
   {
-    "id": 6,
+    "id": 9,
+    "nome": "Nacional RJ",
+    "operadora": "Unimed",
+    "imagemLogo": "/images/logos/unimed.png",
+    "precoInteiro": "451",
+    "precoCentavos": ",87",
+    "whatsapp": "5521986254481"
+  },
+  {
+    "id": 10,
     "nome": "Nacional RN",
     "operadora": "Unimed",
     "imagemLogo": "/images/logos/unimed.png",
     "precoInteiro": "451",
-    "precoCentavos": ",87"
+    "precoCentavos": ",87",
+    "whatsapp": "5521997734036"
+  },
+  {
+    "id": 11,
+    "nome": "Nacional BA",
+    "operadora": "Unimed",
+    "imagemLogo": "/images/logos/unimed.png",
+    "precoInteiro": "451",
+    "precoCentavos": ",87",
+    "whatsapp": "557191228219"
+  },
+  {
+    "id": 12,
+    "nome": "Nacional MG",
+    "operadora": "Unimed",
+    "imagemLogo": "/images/logos/unimed.png",
+    "precoInteiro": "451",
+    "precoCentavos": ",87",
+    "whatsapp": "553193548364"
+  },
+  {
+    "id": 13,
+    "nome": "Nacional MA",
+    "operadora": "Unimed",
+    "imagemLogo": "/images/logos/unimed.png",
+    "precoInteiro": "451",
+    "precoCentavos": ",87",
+    "whatsapp": "559887374850"
+  },
+  {
+    "id": 14,
+    "nome": "Nacional AM",
+    "operadora": "Unimed",
+    "imagemLogo": "/images/logos/unimed.png",
+    "precoInteiro": "451",
+    "precoCentavos": ",87",
+    "whatsapp": "5521988491867"
+  },
+  {
+    "id": 15,
+    "nome": "Advance 600, Advance 700, Premium 900",
+    "operadora": "Hapvida Notre Dame",
+    "imagemLogo": "/images/logos/hapvida-gndi.png",
+    "precoInteiro": "451",
+    "precoCentavos": ",87",
+    "whatsapp": "5521971412207"
   }
 ]

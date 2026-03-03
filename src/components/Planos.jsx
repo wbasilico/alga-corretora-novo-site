@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Planos.css';
 import planosData from '../data/planos.json';
-import { getWhatsAppUrl, WA_CONFIG } from '../utils/contatosRedes';
+import { getWhatsAppUrl } from '../utils/contatosRedes'; // Removi o WA_CONFIG pois não é mais usado aqui
 
 const Planos = () => {
   return (
@@ -57,8 +57,9 @@ const Planos = () => {
                   className="btn-contratar"
                   onClick={() => window.open(
                     getWhatsAppUrl(
-                      WA_CONFIG.numeroVendas, 
-                      `Olá, quero mais informações sobre o plano ${plano.nome} da ${plano.operadora}.`
+                      // ALTERAÇÃO AQUI: Agora usa o número individual do JSON
+                      plano.whatsapp, 
+                      `Olá, eu gostaria de mais informações sobre o plano ${plano.nome} da ${plano.operadora}. Podemos conversar?`
                     ), 
                     '_blank'
                   )}
