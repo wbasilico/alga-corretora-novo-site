@@ -3,7 +3,7 @@
   height: 100vh;
   padding-top: 80px; /* Compensa o header fixo */
   /* Degradê suave do layout */
-  background: linear-gradient(135deg, var(--alga-off-white) 0%, var(--alga-verde-agua) 100%);
+  background: linear-gradient(135deg, var(--alga-off-white) 0%, var(--alga-coral-vibrante) 100%);
   display: flex;
   align-items: center; /* Centraliza o container inteiro verticalmente na tela */
   position: relative;
