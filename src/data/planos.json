@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "nome": "Nacional RJ",
+    "nome": "Estadual RJ",
     "operadora": "Unimed",
     "imagemLogo": "/images/logos/unimed.png",
     "precoInteiro": "337",
@@ -133,5 +133,25 @@
     "precoInteiro": "242",
     "precoCentavos": ",00",
     "whatsapp": "5521971412207"
+  },
+  {
+    "id": 16,
+    "nome": "+Odonto",
+    "operadora": "Hapvida",
+    "imagemLogo": "/images/logos/hapvida-odonto.png",
+    "precoInteiro": "22",
+    "precoCentavos": ",90",
+    "whatsapp": "5521971412207",
+    "destaque": true
+  },
+  {
+    "id": 17,
+    "nome": "Seguros Odonto",
+    "operadora": "Seguros Unimed",
+    "imagemLogo": "/images/logos/seguros-unimed.png",
+    "precoInteiro": "42",
+    "precoCentavos": ",30",
+    "whatsapp": "5521971412207",
+    "destaque": true
   }
 ]

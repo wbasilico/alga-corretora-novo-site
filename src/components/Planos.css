@@ -21,22 +21,20 @@
   opacity: 0.9;
 }
 
-/* Wrapper para segurar as máscaras de opacidade e o carrossel */
 .carrossel-wrapper {
   position: relative;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 40px; /* Espaço para os botões de navegação */
+  padding: 0 40px; 
 }
 
-/* Máscaras de Opacidade */
 .mask-left, .mask-right {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 150px;
   z-index: 10;
-  pointer-events: none; /* Permite que o mouse/dedo passe através da máscara para deslizar */
+  pointer-events: none; 
 }
 
 .mask-left {
@@ -49,22 +47,20 @@
   background: linear-gradient(to left, var(--alga-verde-agua) 0%, transparent 100%);
 }
 
-/* Estilização do Swiper e Botões de Navegação (Z-index acima da máscara) */
+/* Adicionado mais padding no topo para garantir que o badge não seja cortado */
 .planos-swiper {
-  padding: 20px 0;
+  padding: 30px 0 20px 0;
 }
 
 .swiper-button-next, .swiper-button-prev {
   color: var(--alga-off-white) !important;
-  z-index: 20 !important; /* Acima da máscara */
+  z-index: 20 !important; 
 }
 
-/* Força todos os slides a terem a mesma altura do slide mais alto */
 .planos-swiper .swiper-slide {
   height: auto;
 }
 
-/* Impedir seleção de texto ao arrastar */
 .plano-card {
   user-select: none;
   -webkit-user-select: none;
@@ -74,12 +70,13 @@
   flex-direction: column;
   height: 100%;
   gap: 25px;
-  /* Redefinindo o Glassmorphism especificamente para este fundo verde */
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  position: relative; 
+  transition: all 0.3s ease; 
 }
 
 .plano-info {
@@ -117,7 +114,6 @@
   object-fit: contain;
 }
 
-/* Formatação Específica de Preço */
 .plano-preco-area {
   text-align: left;
 }
@@ -132,36 +128,48 @@
 
 .preco-destaque {
   display: flex;
-  align-items: flex-start; /* Alinha o '290' no topo */
+  align-items: flex-start; 
   line-height: 1;
 }
 
 .moeda {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 4px;
+  margin-top: 8px; /* Ajustado para acompanhar o preço maior */
   margin-right: 4px;
-  align-self: flex-end;
-  margin-bottom: 3px;
 }
 
+/* PREÇO BEM MAIOR AQUI */
 .inteiro {
-  font-size: 2.8rem;
+  font-size: 3.8rem; /* Aumentado drasticamente de 2.8rem para 3.8rem */
   font-weight: 700;
   font-family: var(--font-title);
+  letter-spacing: -2px; /* Deixa os números mais juntinhos e elegantes */
 }
 
 .centavos {
   font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 6px;
+  margin-top: 8px; /* Ajustado para acompanhar o preço maior */
+  margin-left: 2px;
   font-family: var(--font-title);
 }
 
 .asterisco {
   font-size: 1.2rem;
   font-weight: 400;
-  margin-top: 6px;
+  margin-top: 8px;
+}
+
+/* ESTILO DA INFORMAÇÃO EXTRA PEQUENA */
+.info-extra {
+  font-size: 0.85rem;
+  text-align: left;
+  margin-top: -10px; /* Puxa para mais perto do preço */
+  margin-bottom: -5px; /* Empurra o botão mais pra perto */
+  opacity: 0.85;
+  font-weight: 500;
+  color: var(--alga-off-white);
 }
 
 .btn-contratar {
@@ -170,7 +178,12 @@
   color: var(--alga-verde-agua);
   padding: 15px;
   font-size: 1.1rem;
-  margin-top: auto; /* Empurra o botão para o fundo do card */
+  margin-top: auto; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .btn-contratar:hover {
@@ -183,7 +196,7 @@
   margin: 0 auto;
   padding: 20px 40px 0;
   position: relative;
-  z-index: 20; /* Garante que fique acima da máscara se houver sobreposição */
+  z-index: 20; 
 }
 
 .nota-legal {
@@ -194,9 +207,74 @@
 
 @media (max-width: 768px) {
   .mask-left, .mask-right {
-    width: 60px; /* Reduz a máscara em telas menores */
+    width: 60px; 
   }
   .carrossel-wrapper {
     padding: 0 20px;
   }
+}
+
+/* =========================================
+   ESTILOS PARA O CARD EM DESTAQUE (ODONTO)
+========================================== */
+
+/* Removemos o transform (desalinhamento) e colocamos a borda off-white */
+.card-destaque {
+  border: 2px solid var(--alga-off-white);
+  /* box-shadow sutil para ainda dar um charme de profundidade, mas sem mover o card */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* A Etiqueta flutuante "ODONTO" */
+.badge-oferta {
+  position: absolute;
+  top: -15px; 
+  right: 20px;
+  background-color: var(--alga-off-white); /* Fundo off-white */
+  color: var(--alga-coral-vibrante); /* Letra coral-brilhante */
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  /* A animação de pulsar foi removida */
+}
+
+/* Botão do Card em Destaque */
+.card-destaque .btn-contratar {
+  background-color: var(--alga-off-white); /* Fundo off-white */
+  color: var(--alga-coral-vibrante); /* Letra coral-brilhante */
+}
+
+.card-destaque .btn-contratar:hover {
+  background-color: #fce8e3; /* Fica levemente rosado/coral bem claro no hover */
+}
+
+/* =========================================
+   PREÇOS GIGANTES SÓ PARA O DESTAQUE (ODONTO)
+========================================== */
+.card-destaque .inteiro {
+  font-size: 5.5rem; /* Deixa o número principal enorme! */
+  line-height: 0.85; /* Remove o espaço fantasma em cima e embaixo do número para não empurrar o botão pra baixo */
+  letter-spacing: -3px; /* Mantém os números gordinhos bem juntos */
+}
+
+/* Ajusta as moedas e centavos para acompanharem o número gigante de forma alinhada */
+.card-destaque .moeda {
+  font-size: 1.5rem;
+  margin-top: 6px; /* Ajuste fino de alinhamento pelo topo */
+}
+
+.card-destaque .centavos {
+  font-size: 1.5rem;
+  margin-top: 6px;
+  margin-left: 3px; /* Dá um espacinho um tiquinho maior por conta da fonte grande */
+}
+
+.card-destaque .asterisco {
+  font-size: 1.5rem;
+  margin-top: 6px;
 }

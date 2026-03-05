@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Planos.css';
 import planosData from '../data/planos.json';
-import { getWhatsAppUrl } from '../utils/contatosRedes'; // Removi o WA_CONFIG pois não é mais usado aqui
+import { getWhatsAppUrl } from '../utils/contatosRedes';
 
 const Planos = () => {
   return (
@@ -33,7 +33,13 @@ const Planos = () => {
         >
           {planosData.map((plano) => (
             <SwiperSlide key={plano.id}>
-              <div className="plano-card glass">
+              <div className={`plano-card glass ${plano.destaque ? 'card-destaque' : ''}`}>
+                
+                {/* 1. BADGE ODONTO */}
+                {plano.destaque && (
+                  <div className="badge-oferta">ODONTO</div>
+                )}
+
                 <div className="plano-info">
                   <h3>{plano.nome}</h3>
                   <span className="operadora">{plano.operadora}</span>
@@ -53,11 +59,15 @@ const Planos = () => {
                   </div>
                 </div>
 
+                {/* 2. INFORMAÇÃO EXTRA (Lida direto do JSON) */}
+                {plano.infoExtra && (
+                  <p className="info-extra">{plano.infoExtra}</p>
+                )}
+
                 <button 
                   className="btn-contratar"
                   onClick={() => window.open(
                     getWhatsAppUrl(
-                      // ALTERAÇÃO AQUI: Agora usa o número individual do JSON
                       plano.whatsapp, 
                       `Olá, eu gostaria de mais informações sobre o plano ${plano.nome} da ${plano.operadora}. Podemos conversar?`
                     ), 
