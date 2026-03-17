@@ -6,8 +6,13 @@ import './Hero.css';
 import { getWhatsAppUrl, WA_CONFIG } from '../utils/contatosRedes';
 
 const slides = [
-  { id: 1, img: '/images/hero/hero1.png' },
-  { id: 2, img: '/images/hero/hero2.png' },
+  { id: 1, img: '/images/hero/hero1.jpg' },
+  { id: 2, img: '/images/hero/hero2.jpg' },
+  { id: 3, img: '/images/hero/hero3.jpg' },
+  { id: 4, img: '/images/hero/hero4.jpg' },
+  { id: 5, img: '/images/hero/hero5.jpg' },
+  { id: 6, img: '/images/hero/hero6.jpg' },
+  { id: 7, img: '/images/hero/hero7.jpg' }
 ];
 
 const Hero = () => {
